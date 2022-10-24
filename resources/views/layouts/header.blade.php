@@ -9,12 +9,12 @@
                                 <li><span><i class="fc-icon ftc-icon-email"></i> {{ config('mail.from.address') }}</span></li>
                                 <li><span><i class="fc-icon ftc-icon-phone-contact"></i> Troll Free: +1 212-212-2376</span></li>
                             </ul>
-                            <ul class="social pull-right">
+                            {{-- <ul class="social pull-right">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                {{-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> --}}
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                {{-- <li><a href="#"><i class="fa fa-youtube"></i></a></li> --}}
-                            </ul>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul> --}}
                         </div>
                     </div>
                 </div>

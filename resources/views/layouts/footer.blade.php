@@ -27,82 +27,6 @@
                     </ul>
                 </div>
             </div>
-            <!--End single footer widget-->
-            <!--Start single footer widget-->
-            {{-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="single-footer-widget">
-                    <h3 class="title">Recent News</h3>
-                    <ul class="recent-news">
-                        <li>
-                            <div class="box">
-                                <div class="overlay">
-                                    <img alt="Awesome image" src="img/footer/recent-news/1.jpg">
-                                    <div class="content-box">
-                                        <img src="{{ asset('images/logo/logo.ico') }}" style="width: 259px; height: 56px;" alt="Logo Image" id="skin-logo-img" />        <div class="icon-holder">
-                                            <i class="fc-icon ftc-icon-dumbbell"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p>Workout News</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <a href="blog-details-sidebar.html">
-                                    <p>7 Best shoulder exer-
-                                        <br>cised you’re not doing</p>
-                                </a>
-                                <span>February 07, 2016</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box">
-                                <div class="overlay">
-                                    <img alt="Awesome image" src="img/footer/recent-news/2.jpg">
-                                    <div class="content-box">
-                                        <div class="icon-holder">
-                                            <i class="fc-icon ftc-icon-dumbbell"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p>Workout News</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <a href="blog-details-sidebar.html">
-                                    <p>8 Things You Should
-                                        <br> Never Do On Chest Day</p>
-                                </a>
-                                <span>February 12, 2016</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box">
-                                <div class="overlay">
-                                    <img alt="Awesome image" src="img/footer/recent-news/3.jpg">
-                                    <div class="content-box">
-                                        <div class="icon-holder">
-                                            <i class="fc-icon ftc-icon-dumbbell"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p>Workout News</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <a href="blog-details-sidebar.html">
-                                    <p>Louis Williams Instinc-
-                                        <br>tive Back Workout</p>
-                                </a>
-                                <span>February 17, 2016</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div> --}}
-            <!--End single footer widget-->
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="single-footer-widget">
                     <h3 class="title">Contact us</h3>
@@ -135,16 +59,7 @@
                                 <p>{{ config('mail.from.address') }}</p>
                             </div>
                         </li>
-                        {{-- <li>
-                            <div class="icon-holder">
-                                <i class="fa fa-clock-o"></i>
-                            </div>
-                            <div class="text">
-                                <p>Week Days : 05:00 – 22:00
-                                    <br>Saturday : 08:00 – 18:00
-                                    <br>Sunday : 08:00 – 12:00</p>
-                            </div>
-                        </li> --}}
+
                     </ul>
                 </div>
             </div>
@@ -162,14 +77,14 @@
                         <p>Copyright © 2022 Nutritional planet Limited are a UK based Company</p>
                     </div>
                 </div>
-                <div class="pull-right">
+                {{-- <div class="pull-right">
                     <div class="social-links">
                         <a href="#"><i class="fa fa-facebook"></i></a>
-                        {{-- <a href="#"><i class="fa fa-twitter"></i></a> --}}
+                        <a href="#"><i class="fa fa-twitter"></i></a>
                         <a href="#"><i class="fa fa-google-plus"></i></a>
-                        {{-- <a href="#"><i class="fa fa-youtube"></i></a> --}}
+                        <a href="#"><i class="fa fa-youtube"></i></a>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
         <!-- /.footer-bottom -->
