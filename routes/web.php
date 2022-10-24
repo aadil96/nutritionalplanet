@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', fn () => view('home'))->name('home');
+Route::get('/', function () {
+    $data = include(__DIR__.'/../app/Models/Product.php');
+    $products = [];
+    foreach ($data as $product) {
+        $products[] = (object) $product;
+    }
+    return view('home', ['products' => $products]);
+})
+    ->name('home');
 
 Route::get('cancellation-policy', fn () => view('cancellation-policy'))
     ->name('cancellation-policy');
@@ -24,5 +33,17 @@ Route::get('terms-and-conditions', fn () => view('terms-and-conditions'))->name(
 
 Route::get('products', fn () => view('products'))->name('products');
 
-Route::get('product-detail', fn () => view('product-detail'))->name('product-detail');
-// Route::get('product-detail/{slug}', fn () => view('product-detail/{slug}'))->name('product-detail');
+Route::get('product-detail/{slug}', function ($slug) {
+
+    $products = include(__DIR__.'/../app/Models/Product.php');
+    
+    abort_if(
+        ! in_array($slug, array_keys($products)),
+        Response::HTTP_NOT_FOUND
+    );
+    
+    $product = (object) $products[$slug];
+
+   return view('product-detail', ['products' => $products]);
+})
+    ->name('product-detail');

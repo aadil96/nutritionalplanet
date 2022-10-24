@@ -48,3 +48,4 @@
 <script src="{{ asset('customizer/plugins/jQuery.style.switcher.min.js') }}"></script>
 <script src="{{ asset('customizer/plugins/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js') }}"></script>
 <script src="{{ asset('customizer/js/customizer.js') }}"></script>
+
