@@ -40,7 +40,7 @@ Route::get('products', function () {
     return view('products', ['products' => $products]);
 })->name('products');
 
-Route::get('product-detail/{slug}', function ($slug) {
+Route::get('products/{slug}', function ($slug) {
 
     $products = include(__DIR__.'/../app/Models/Product.php');
     
