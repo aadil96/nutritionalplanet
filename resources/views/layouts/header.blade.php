@@ -32,9 +32,9 @@
                         <li>
                             <a href="{{ route('home') }}" class="flip-flop-btn"><span data-hover="HOME">HOME</span></a>
                         </li>
-                        {{-- <li>
-                            <a href="{{ route('privacy-policy') }}" class="flip-flop-btn"><span data-hover="ABOUT">Gallery</span></a>
-                        </li> --}}
+                        <li>
+                            <a href="{{ route('products') }}" class="flip-flop-btn"><span data-hover="Products">Products</span></a>
+                        </li>
                         <li>
                             <a href="{{ route('privacy-policy') }}" class="flip-flop-btn"><span data-hover="Privacy Policy">Privacy Policy</span></a>
                         </li>

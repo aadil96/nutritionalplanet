@@ -45,7 +45,7 @@
                                 <img alt="" src="{{ asset('images/products/'.$product->slug.'.jpeg') }}">
                                 <div class="overlay">
                                     <div class="icon-holder">
-                                        <a href="#"><i class="fa fa-share"></i></a>
+                                        <a href="{{ route('product-detail', ['slug' => $product->slug]) }}"><i class="fa fa-share"></i></a>
                                     </div>
                                 </div>
                             </div>

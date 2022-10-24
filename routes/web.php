@@ -31,7 +31,14 @@ Route::get('privacy-policy', fn () => view('privacy-policy'))->name('privacy-pol
 
 Route::get('terms-and-conditions', fn () => view('terms-and-conditions'))->name('terms-and-conditions');
 
-Route::get('products', fn () => view('products'))->name('products');
+Route::get('products', function () {
+    $data = include(__DIR__.'/../app/Models/Product.php');
+    $products = [];
+    foreach ($data as $product) {
+        $products[] = (object) $product;
+    }
+    return view('products', ['products' => $products]);
+})->name('products');
 
 Route::get('product-detail/{slug}', function ($slug) {
 
@@ -44,6 +51,6 @@ Route::get('product-detail/{slug}', function ($slug) {
     
     $product = (object) $products[$slug];
 
-   return view('product-detail', ['products' => $products]);
+   return view('product-detail', ['product' => $product]);
 })
     ->name('product-detail');

@@ -23,45 +23,20 @@
     <div class="container">
         
         <div class="row">
+            @forelse ($products as $product)
             <div class="col-md-4 col-sm-6 ">
                 <div class="single-product-item text-center">
                     <div class="img-holder">
-                        <img alt="" src="{{ asset('images/products/milk-thistle.jpeg') }}">
-                        <!-- /.overlay -->
+                        <a href="{{ route('product-detail', ['slug' => $product->slug]) }}"><img alt="" src="{{ asset('images/products/'.$product->slug.'.jpeg') }}"></a>
                     </div>
-                    <!-- /.img-holder -->
                     <div class="title">
-                        <a href="single-shop.html"><h3>Milk Thistle </h3></a>
-                        {{-- <h2><del class="before-rate">$190.99</del>$100.99</h2> --}}
+                        <a href="{{ route('product-detail', ['slug' => $product->slug]) }}"><h3>{{ $product->name }} </h3></a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 ">
-                <div class="single-product-item text-center">
-                    <div class="img-holder">
-                        <img alt="" src="{{ asset('images/products/super-b-complex.jpeg') }}">
-                        <!-- /.overlay -->
-                    </div>
-                    <!-- /.img-holder -->
-                    <div class="title">
-                        <a href="single-shop.html"><h3>Super B Complex</h3></a>
-                        {{-- <h2><del class="before-rate">$190.99</del>$100.99</h2> --}}
-                    </div>
-                </div>
-            </div>  
-            <div class="col-md-4 col-sm-6 ">
-                <div class="single-product-item text-center">
-                    <div class="img-holder">
-                        <img alt="" src="{{ asset('images/products/nettle-leaf.jpeg') }}">
-                        <!-- /.overlay -->
-                    </div>
-                    <!-- /.img-holder -->
-                    <div class="title">
-                        <a href="single-shop.html"><h3>Nettle Leaf</h3></a>
-                        {{-- <h2><del class="before-rate">$190.99</del>$100.99</h2> --}}
-                    </div>
-                </div>
-            </div>              
+            </div>   
+            @empty
+                
+            @endforelse        
         </div>
     </div>
     <!-- /.container -->
