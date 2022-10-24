@@ -9,12 +9,6 @@
                                 <li><span><i class="fc-icon ftc-icon-email"></i> {{ config('mail.from.address') }}</span></li>
                                 <li><span><i class="fc-icon ftc-icon-phone-contact"></i> Troll Free: +1 212-212-2376</span></li>
                             </ul>
-                            {{-- <ul class="social pull-right">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                            </ul> --}}
                         </div>
                     </div>
                 </div>
@@ -48,12 +42,5 @@
                 </div>
             </nav>
         </div>
-    </div><!-- /.header-menu-wrapper -->
-    {{-- <div class="search-box collapse" id="search-box">
-        <div class="container">
-            <form action="#">
-                <input type="text" placeholder="To Search Start Typing...">
-            </form>
-        </div>
-    </div> --}}
+    </div>
 </header>

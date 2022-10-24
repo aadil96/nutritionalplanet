@@ -25,7 +25,7 @@
                         and active lifestyle.
                     </div>
                     <div class="tp-caption  tp-resizeme banner-caption-h1-large banner-caption-bg" data-x="right" data-hoffset="15" data-y="top" data-voffset="570" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="1500">
-                        <span><img src="img/slides/title-decor.png" alt=""> Don't Miss it</span>
+                        <span><img src="{{ asset('img/slides/title-decor.png') }}" alt=""> Don't Miss it</span>
                     </div>
                 </li>
             </ul>
