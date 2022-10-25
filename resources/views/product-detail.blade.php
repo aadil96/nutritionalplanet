@@ -56,7 +56,7 @@
                                 </div>
                                 <!-- /.single-product-carousel-content-box owl-theme-owl-carousel -->
                                 <div class="single-product-carousel-thumbnail-box owl-theme owl-carousel">
-                                    
+
                                     <div class="item">
                                         <img src="{{ asset('images/products/'.$product->slug.'.jpeg')}}" alt="Awesome Image" />
                                     </div>
@@ -83,8 +83,10 @@
                                         <p><span>Nutritional info: </span></p>
                                         <p>{{ $product->nutritional_info }}</p>
                                     </div>
-                                   
+
                                     <p><strong>Suitable for vegetarians and vegans.</strong></p>
+                                    <br>
+                                    <p><strong>Please  <a href="tel:{{ env('TELEPHONE') }}">call us</a> to place an order.</strong></p>
                                 </div>
                             </div>
                         </div>
