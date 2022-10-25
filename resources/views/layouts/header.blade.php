@@ -7,7 +7,7 @@
                         <div class="clearfix">
                             <ul class="contact-info pull-left">
                                 <li><span><a href="mailto:{{ config('mail.from.address') }}"><i class="fc-icon ftc-icon-email"></i> {{ config('mail.from.address') }}</a></span></li>
-                                <li><span><a href="tel:{{ env('TELEPHONE') }}"><i class="fc-icon ftc-icon-phone-contact"></i> Troll Free: {{ env('TELEPHONE') }}</a></span></li>
+                                <li><span><a href="tel:{{ env('TELEPHONE') }}"><i class="fc-icon ftc-icon-phone-contact"></i> Customer Care: {{ env('TELEPHONE') }}</a></span></li>
                             </ul>
                         </div>
                     </div>
