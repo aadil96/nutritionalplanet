@@ -56,7 +56,7 @@
                                 <i class="fa fa-envelope"></i>
                             </div>
                             <div class="text">
-                                <p>{{ config('mail.from.address') }}</p>
+                                <p><a href="{{ config('mail.from.address') }}">{{ config('mail.from.address') }}</a></p>
                             </div>
                         </li>
 
