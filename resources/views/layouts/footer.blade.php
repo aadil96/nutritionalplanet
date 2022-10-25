@@ -48,7 +48,7 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="text">
-                                <p>Troll Free: +1 212-212-2376</p>
+                                <p><a href="tel:{{ env('TELEPHONE') }}"> Troll Free: {{ env('TELEPHONE') }}</a></p>
                             </div>
                         </li>
                         <li>
