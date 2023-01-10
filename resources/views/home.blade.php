@@ -37,12 +37,12 @@
                 <h1><span>Our Products</span></h1>
             </div>
             <div class="row">
-               
+
                 @forelse ($products as $product)
                     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                         <div class="single-item">
                             <div class="img-holder">
-                                <img alt="" src="{{ asset('images/products/'.$product->slug.'.jpeg') }}">
+                                <img alt="" src="{{ asset('images/products/'.$product->slug.'-thumbnail.jpeg') }}">
                                 <div class="overlay">
                                     <div class="icon-holder">
                                         <a href="{{ route('product-detail', ['slug' => $product->slug]) }}"><i class="fa fa-share"></i></a>
@@ -52,9 +52,9 @@
                         </div>
                     </div>
                 @empty
-                    
+
                 @endforelse
-               
+
             </div>
         </div>
     </section>
